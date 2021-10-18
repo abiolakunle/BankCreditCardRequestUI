@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @font-face {
+            font-family: 'proxima_novabold';
+            src: url('./assets/fonts/proximanova-bold-webfont.woff2') format('woff2'),
+                url('./assets/fonts/proximanova-bold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'proxima_novaextrabold';
+            src: url('./assets/fonts/proximanova-extrabold-webfont.woff2') format('woff2'),
+                url('./assets/fonts/proximanova-extrabold-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        @font-face {
+            font-family: 'proxima_novaregular';
+            src: url('./assets/fonts/proximanova-reg-webfont.woff2') format('woff2'),
+                url('./assets/fonts/proximanova-reg-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --primary-color: #23123A;
+            --secondary-color: #FA6E3D;
+            --light: #F1F5F8;
+            --dark: #373737;
+            --dark2: #373737;
+            --turquoise: #59D8D1;
+            --blue: #1194F6;
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: none;
+        }
+
+
+        button {
+            border: none;
+
+
+        }
+
+        html,
+        body {
+            /* position: absolute;
+            top: 0; */
+
+            width: 100%;
+            height: 100%;
+            font-family: 'proxima_novaregular';
+        }
+
+        #main-header {
+            /* position: relative; */
+            background-color: var(--primary-color);
+            height: calc(100vh - 55px);
+            padding-top: 55px;
+            background-image: url("./assets/images/Asset\ 2.svg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100% auto;
+        }
+
+        #main-header h1 {
+            font-family: 'proxima_novaextrabold';
+            color: #ffffff;
+            font-size: 136px;
+            margin: 50px 0px 0px 40px;
+        }
+
+        #main-nav {
+
+            background-color: #ffffff;
+        }
+
+        #main-nav-links {
+            font-family: 'proxima_novabold';
+            font-size: 22px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 45px;
+            list-style-type: none !important;
+        }
+
+        main {
+            background-color: var(--light);
+            padding: 50px;
+        }
+
+        main h2 {
+            font-family: 'proxima_novabold';
+            color: var(--dark);
+            font-size: 30px;
+        }
+
+        #card-section {
+            background-color: #ffffff;
+            padding: 50px 60px;
+            margin-top: 50px;
+        }
+
+        #card-section h3 {
+            color: var(--dark2);
+            font-size: 26px;
+        }
+
+        #card-section header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #card-section #rating {
+            font-size: 22px;
+        }
+
+        #card-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0px;
+            flex-wrap: wrap;
+
+        }
+
+        #card-info .secondary-button {
+            width: 35%;
+        }
+
+        #card-view {
+            display: flex;
+            justify-content: space-between;
+            align-content: flex-start;
+            width: 35%;
+            gap: 20px;
+        }
+
+        #card-view img {
+            width: 65%;
+            align-self: flex-start;
+        }
+
+        #card-info-list {
+            width: 60%;
+            margin-left: 20px;
+            font-size: 24px;
+
+        }
+
+        #card-info-list li {
+            margin-bottom: 35px;
+        }
+
+        .pill {
+            font-family: 'proxima_novabold';
+            background-color: var(--turquoise);
+            color: #ffffff;
+            min-width: 30px;
+            border-radius: 20px;
+            text-align: center;
+            padding: 5px 10px;
+        }
+
+        #card-stats span {
+            display: block;
+            margin: 0px 0px 20px 0px;
+            font-size: 22px;
+        }
+
+
+        #card-stats {
+            text-align: center;
+        }
+
+        .secondary-button {
+            font-family: 'proxima_novabold';
+            background-color: var(--secondary-color);
+            width: 100%;
+            padding: 20px 0px;
+            color: #ffffff;
+            border-radius: 10px;
+            margin: 15px 0px;
+        }
+
+        .star {
+            height: 15px;
+        }
+
+        hr {
+            margin-bottom: 20px;
+        }
+
+        /* #main-nav-links .main-nav-link {
+            justify-self: center;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <header id="main-header">
+        <nav id="main-nav">
+            <ul id="main-nav-links">
+                <li class="main-nav-link">Navigation link One</li>
+                <li class="main-nav-link">Navigation link Two</li>
+                <li class="main-nav-link">Navigation link Three</li>
+            </ul>
+
+        </nav>
+        <h1>Do the right thing</h1>
+    </header>
+
+    <main>
+        <h2>
+            Credit Opportunities With Good Approval Odds†
+        </h2>
+
+        <section id="card-section">
+
+            <header>
+                <h3>Barclaycard CashForward™ World MasterCard™</h3>
+                <p id="rating">
+                    <img class="star" src="./assets/images/star-filled.svg" alt="*">
+                    <img class="star" src="./assets/images/star-filled.svg" alt="*">
+                    <img class="star" src="./assets/images/star-filled.svg" alt="*">
+                    <img class="star" src="./assets/images/star-filled.svg" alt="*">
+                    <img class="star" src="./assets/images/start-outlined.svg" alt="o">
+                    &nbsp; 3,252 Reviews
+                </p>
+            </header>
+
+            <div id="card-info">
+                <div id="card-view">
+                    <img src="./assets/images/Asset 3.svg" alt="">
+
+                    <div id="card-stats">
+                        <span>Approval Odds†</span>
+
+                        <span class="pill">Very Good</span>
+                    </div>
+                </div>
+
+                <ul id="card-info-list">
+
+                    <li>Get a $100 cash rewards bonus after you spend $500 in purchases in the first 90 days after
+                        account opening.</li>
+
+
+                    <li>Earn unlimited 1.5% cash rewards on every purcahse.</li>
+
+                    <li> Earn unlimited 1.5% cash rewards on every<a href="#">...show more</a></li>
+                </ul>
+                <button class="secondary-button">Apply Now</button>
+            </div>
+
+            <hr />
+            <a href="#">See Details Rates & Fees</a>
+        </section>
+    </main>
+
+</body>
+
+</html>
