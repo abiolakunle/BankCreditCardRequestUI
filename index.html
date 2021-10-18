@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WalletHub</title>
 
     <style>
         @font-face {
@@ -14,7 +14,6 @@
                 url('./assets/fonts/proximanova-bold-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-
         }
 
         @font-face {
@@ -23,7 +22,6 @@
                 url('./assets/fonts/proximanova-extrabold-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-
         }
 
         @font-face {
@@ -32,7 +30,6 @@
                 url('./assets/fonts/proximanova-reg-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-
         }
 
         * {
@@ -56,23 +53,16 @@
             text-decoration: none;
         }
 
-
         button {
             border: none;
-
-
         }
 
         html,
         body {
-            /* position: absolute;
-            top: 0; */
-
             width: 100%;
             height: 100%;
             font-family: 'proxima_novaregular';
         }
-
 
         @media screen and (min-width:320px) and (max-width:1024px) {
 
@@ -81,10 +71,9 @@
                 margin: 50px 0px 0px 40px;
             }
 
-
             #main-header {
                 background-image: url("./assets/images/Asset\ 4.svg") !important;
-
+                height: calc(100vh - 95px) !important;
             }
 
             main h2 {
@@ -124,7 +113,6 @@
                 width: 100% !important;
             }
 
-
             #card-stats span {
 
                 font-size: 18px !important;
@@ -147,15 +135,9 @@
                 font-size: 16px !important;
             }
 
-
-            #mobile-nav-links .main-nav-link {
-                width: 30% !important;
-            }
-
         }
 
         #main-header {
-            /* position: relative; */
             background-color: var(--primary-color);
             height: calc(100vh - 55px);
             padding-top: 55px;
@@ -173,7 +155,6 @@
         }
 
         #main-nav {
-
             background-color: #ffffff;
         }
 
@@ -186,14 +167,21 @@
             height: 45px;
             list-style-type: none !important;
             text-align: center;
-
+            width: 100%;
         }
 
-        #main-nav-links .main-nav-link {
+        .main-nav-link {
             border: 1px solid var(--light2);
             width: 100%;
-            height: 100%;
-            align-self: center;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            gap: 0px;
+            align-items: center;
+        }
+
+        .main-nav-link a {
+            color: #000000;
         }
 
         main {
@@ -321,14 +309,14 @@
     <header id="main-header">
         <nav id="main-nav">
             <ul id="main-nav-links">
-                <li class="main-nav-link">Navigation link One</li>
-                <li class="main-nav-link">Navigation link Two</li>
-                <li class="main-nav-link">Navigation link Three</li>
+                <li class="main-nav-link"><a hre="#">Navigation link One</a> </li>
+                <li class="main-nav-link"><a href="#">Navigation link Two</a></li>
+                <li class="main-nav-link"><a href="#">Navigation link Three</a></li>
             </ul>
             <ul id="mobile-nav-links">
-                <li class="main-nav-link">Link One</li>
-                <li class="main-nav-link">Link Two</li>
-                <li class="main-nav-link">Link Three</li>
+                <li class="main-nav-link"><a href="#">Link One</a> </li>
+                <li class="main-nav-link"><a href="#">Link Two</a> </li>
+                <li class="main-nav-link"><a href="#">Link Three</a></li>
             </ul>
 
         </nav>
